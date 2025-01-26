@@ -1,0 +1,143 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+}
+
+table thead {
+  background-color: #222;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #444;
+}
+
+table th {
+  color: #fff;
+  font-size: 1.2em;
+}
+
+table td img {
+  width: 25px;
+  height: auto;
+  vertical-align: middle;  /* Ensures the images align vertically in the center */
+  margin: 0 8px;  /* Adjusted to provide uniform spacing */
+  display: inline-block;  /* Makes sure all images are inline and leveled */
+}
+table .ucl {
+  background-color: #003f5c;
+}
+
+table .uel {
+  background-color: #ffa600;
+}
+
+table .relegation {
+  background-color: #ff6361;
+}
+
+td {
+  color: #fff;
+}
+
+td:nth-child(4), /* Wins column */
+td:nth-child(5), /* Draws column */
+td:nth-child(6) { /* Losses column */
+  font-weight: bold;
+}
+
+td:nth-child(4) { /* Wins column */
+  color: #00ff00; /* Green for wins */
+}
+
+td:nth-child(5) { /* Draws column */
+  color: #ffa500; /* Orange for draws */
+}
+
+td:nth-child(6) { /* Losses column */
+  color: #ff0000; /* Red for losses */
+}
+
+table td:last-child { /* Last 5 performance */
+  font-family: monospace;
+}
+
+table td:last-child span {
+  display: inline-block;
+  padding: 3px 6px;
+  margin: 2px;
+  border-radius: 4px;
+}
+
+table td:last-child .win {
+  background-color: #00ff00; /* Green */
+  color: #000;
+}
+
+table td:last-child .draw {
+  background-color: #ffa500; /* Orange */
+  color: #000;
+}
+
+table td:last-child .loss {
+  background-color: #ff0000; /* Red */
+  color: #fff;
+}
+/* Qualification/Relegation Legends */
+.legend {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.legend.ucl {
+  background-color: #003f5c;
+}
+
+.legend.uel {
+  background-color: #ffa600;
+}
+
+.legend.relegation {
+  background-color: #ff6361;
+}
+.legend {
+  list-style-type: none; /* Removes bullets */
+  display: inline-block; /* Aligns items horizontally */
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  color: white; /* Text color */
+}
+
+.legend.win {
+  background-color: green;
+}
+
+.legend.draw {
+  background-color: orange;
+}
+
+.legend.loss {
+  background-color: red;
+}
